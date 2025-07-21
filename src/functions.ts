@@ -4,9 +4,12 @@
  * - Accepts a "name" parameter of type "string"
  * - that just prints (logs) that "name" on the screen
  */
+
 function printName(name: string): void {
-  // write your code here
+  // write your code herex
+  console.log(name);
 }
+printName("Bashaier");
 
 /**
  * Task 2:
@@ -17,6 +20,8 @@ function printName(name: string): void {
  */
 function printAge(birthYear: number): void {
   // write your code here
+  const myAge = 2025 - birthYear;
+  console.log(myAge);
 }
 
 // example:
@@ -40,6 +45,15 @@ type LanguageType = "en" | "es" | "fr" | "tr";
 
 function printHello(name: string, language: LanguageType): void {
   // write your code here
+  if (language === "en") {
+    console.log(`Hello ${name}`);
+  } else if (language === "es") {
+    console.log(`Hola ${name}`);
+  } else if (language === "fr") {
+    console.log(`Bonjour ${name}`);
+  } else {
+    console.log(`Merhaba ${name}`);
+  }
 }
 
 // example:
@@ -56,6 +70,9 @@ printHello("Aziz", "fr"); // => "Bonjour Aziz"
  */
 function printMax(x: number, y: number) {
   // write your code here
+  if (x > y) {
+    console.log(x);
+  } else console.log(y);
 }
 
 // example:
